@@ -1,0 +1,94 @@
+.home {
+  scroll-snap-align: none;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.home > p {
+  font-size: 6.67vw;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "jura", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0px 57px 0px 57px;
+}
+
+form input {
+  width: 94%;
+  padding: 30px;
+  margin: 19px 0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #d9d9d9;
+}
+
+form input[type="submit"] {
+  background-color: #d9d9d9;
+  border: 1px solid #000000;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 22px;
+  height: 62px;
+  width: 29%;
+  font-weight: 1000;
+  font-family: "jura", sans-serif;
+  padding: 0px;
+}
+
+form input {
+  height: 38px;
+}
+input::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: "jura", sans-serif;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  font-size: 20px;
+  font-family: "jura", sans-serif;
+}
+
+.input-group label {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  color: #333;
+  font-size: 20px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-family: "jura", sans-serif;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: 25px;
+  left: 10px;
+  font-size: 16px;
+  color: #0000005c;
+  background: #d9d9d9;
+  padding: 0 5px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #000000;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}

@@ -1,0 +1,168 @@
+.mainpg {
+  height: 83vh;
+  border-radius: 40px;
+}
+
+.product {
+  font-size: 9vw;
+  font-weight: 700;
+  color: #333;
+  margin: 100px 0;
+  font-family: "jura", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  justify-content: center;
+}
+
+.sub-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+  justify-items: center;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 50px;
+  background-color: #d9d9d9;
+  width: 75%;
+  height: 25vw;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.containers img {
+  width: 39vw;
+  height: 20vw;
+  border-radius: 20px;
+  object-fit: contain;
+  rotate: none;
+}
+
+.containers label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containers input {
+  display: none;
+}
+
+#shoe img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: 39.5vw;
+  top: 0vw;
+  right: 0vw;
+  border-radius: 40px;
+}
+
+.containers input:checked ~ .hidden {
+  display: block;
+  background-color: #d9d9d9;
+  z-index: 100;
+}
+
+.containers input:checked ~ label > img {
+  display: none;
+}
+
+.hidden .close label {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  object-fit: contain;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.hidden-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  border-radius: 20px;
+}
+
+.hidden-img {
+  width: 50%;
+  border-radius: 20px;
+  object-fit: contain;
+  rotate: none;
+}
+.hidden-img img {
+  width: 40vw;
+  height: 40vw;
+}
+
+.hidden-info {
+  width: 50%;
+}
+
+/* -------------------------------- */
+
+#s2,
+#s3,
+#s4 {
+  width: 40vw;
+  height: 23vw;
+}
+
+#s5,
+#s8,
+#s9,
+#s10,
+#s11,
+#s12,
+#s15 {
+  width: 40vw;
+  height: 32vw;
+}
+
+#h-s1,
+#h-s13,
+#h-s14,
+#h-s16 {
+  width: 50vw;
+  height: 50vw;
+}
+.add-to-cart {
+  padding: 5px;
+}
+.add-to-cart:hover {
+  color: white;
+  background-color: #ff9900;
+  transition: all 0.4s ease-in-out;
+  padding: 6px;
+}
+.buy-now {
+  padding: 5px;
+}
+
+
